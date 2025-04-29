@@ -1,0 +1,147 @@
+/*playfair display font
+
+/*bold weight */
+.playfair-display-bold {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold; 
+    font-style: normal;
+}
+  
+  /*regular weight */
+  .playfair-display-regular {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+}
+  
+   /*light weight */
+  .playfair-display-light {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300; 
+    font-style: normal;
+}
+
+/*light weight */
+.playfair-display-light {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: italic;
+}
+
+/*roboto font*/
+
+/* Regular weight */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+}
+  
+  /* Bold weight */
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; 
+    font-style: normal;
+}
+  
+  /* Light weight */
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; 
+    font-style: normal;
+}
+  
+  /* Italic style */
+  .roboto-italic {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: italic;
+}
+
+/*DESKTOP VERSION STYLES*/
+
+/*styling html and body*/
+html, body {
+    margin: 0;
+    font-family: "Playfair Display", "Roboto, sans-serif";
+}
+
+/*styling the about me div*/
+#about-me {
+    background: linear-gradient(to bottom right, #0099cc 50%, white 50%);
+    display: flex;
+    justify-content: center;
+} 
+
+/*styling the image of me*/
+#picture-of-London {
+    width: 500px;
+    height: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+    display: block;
+}
+
+/*styling the first container*/
+#container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+}
+
+/*styling the text container*/
+#text-container {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    padding: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*styling the icon container*/
+#icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+    margin-top: 100px;
+}
+
+/*styling the icons*/
+.about-icon {
+    font-size: 2.5em;
+}
+
+/*styling the img name*/
+#name {
+    color: white;
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+    font-size: 4em;
+}
+
+/*media query to make name look good on screens of 1024*/
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    /* Your styles for exactly 1024px wide screens */
+    #name {
+      bottom: 55px;
+    }
+}
+
+/*TABLET VERSION STYLES*/
+
+
+
+/*MOBILE VERSION STYLES*/
