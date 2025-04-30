@@ -74,6 +74,11 @@ html, body {
     font-family: "Playfair Display", "Roboto, sans-serif";
 }
 
+/*styling section*/
+section {
+    margin-bottom: 2%;
+}
+
 /*styling the about me div*/
 #about-me {
     background: linear-gradient(to bottom right, #0099cc 50%, white 50%);
@@ -134,9 +139,81 @@ html, body {
 
 /*media query to make name look good on screens of 1024*/
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
-    /* Your styles for exactly 1024px wide screens */
     #name {
       bottom: 55px;
+    }
+}
+
+/*styling h2*/
+h2 {
+    text-align: center;
+}
+
+/*styling card container*/
+#card-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 400px);
+    gap: 150px; 
+    justify-content: center;
+}
+
+/*styling card*/
+.card {
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+/*styling card header*/ 
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 25px;
+}
+
+/*styling work info*/
+.work-info {
+    background-color: gainsboro;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding-bottom: 2px;
+}
+
+/*styling work icons container*/
+.work-icons {
+    display: flex;
+    margin-left: 5rem;
+    gap: 10px;
+
+}
+
+/*styling work text*/
+.work-text {
+    padding: 1rem;
+}
+
+/*styling work icon*/ 
+.about-icon-work {
+    font-size: 1.1em;
+}
+
+/*media query for nest hub desktoops*/
+@media (max-width: 1280px) {
+    #card-container {
+        gap: 50px;
+        grid-template-columns: repeat(3, 275px);
+        grid-template-rows: repeat(2, 400px);
+    }
+
+    .work-icons {
+        margin-left: 4rem;
     }
 }
 
