@@ -222,6 +222,7 @@ h2 {
     width: 100%;         
     height: auto;        
     max-width: 550px; 
+    object-fit: cover;
 }
 
 /*styling conact info*/
@@ -264,8 +265,12 @@ h2 {
 
     #name {
         left: 80px;
-        bottom: 40%;
+        bottom: 36%;
         font-size: 6em;
+    }
+
+    #card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
