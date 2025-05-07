@@ -138,9 +138,9 @@ section {
 }
 
 /*media query to make name look good on screens of 1024*/
-@media screen and (min-width: 1024px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
     #name {
-      bottom: 55px;
+      bottom: 60px;
     }
 }
 
@@ -247,7 +247,7 @@ h2 {
 }
 
 /*TABLET VERSION STYLES*/
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1023px) {
     #container {
         margin: 10px;
         flex-direction: column;
@@ -255,8 +255,8 @@ h2 {
     }
 
     #picture-of-London {
-        width: 100%;
-        display: block;
+        width: 100%; 
+        height: auto;
     }
 
     #text-container {
@@ -264,18 +264,24 @@ h2 {
     }
 
     #name {
-        left: 80px;
-        bottom: 36%;
-        font-size: 6em;
+        font-size: 5em; 
+        left: 50%;
+        top: 15%; 
+        transform: translate(-50%, 50%); 
+        white-space: nowrap;
     }
 
     #card-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    #catImg {
+        width: 365px;
+    }
+
 }
 
-  
-
-
 /*MOBILE VERSION STYLES*/
+@media screen and (max-width: 600px) {
+    
+}
