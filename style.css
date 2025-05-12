@@ -72,6 +72,7 @@
 html, body {
     margin: 0;
     font-family: "Playfair Display", "Roboto, sans-serif";
+    overflow-x: hidden;
 }
 
 /*styling section*/
@@ -213,6 +214,11 @@ h2 {
     justify-content: space-around;
 }
 
+/*styling contact h4*/
+#contact-info h4 {
+    font-size: 1.4em;
+}
+
 /*styling cat img*/
 #catImg {
     border-radius: 8px;
@@ -276,12 +282,77 @@ h2 {
     }
 
     #catImg {
-        width: 365px;
+        width: 50%;
     }
 
 }
 
 /*MOBILE VERSION STYLES*/
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 599px) {
+    #container {
+        margin: 10px;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #picture-of-London {
+        width: 100%; 
+        height: auto;
+    }
+
+    #card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #text-container {
+        margin: 0;
+    }
+
+    #name {
+        font-size: 3em; 
+        left: 50%;
+        top: 15%; 
+        transform: translate(-50%, 24%); 
+        white-space: nowrap;
+    }
+
+    #contact-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #catImg {
+        width: 80%;
+    }
+
+    #contact-info h4 {
+        text-align: center;
+    }
+
+    #icon-container-end {
+        justify-content: center;
+    }
+}
+
+/* Medium phones - 375px */
+@media screen and (max-width: 375px) {
+    #name {
+        font-size: 2.6em; 
+        left: 50%;
+        top: 15%; 
+        transform: translate(-50%, 18%); 
+        white-space: nowrap;
+    }
+  }
+  
+  /* Small phones - 320px */
+  @media screen and (max-width: 320px) {
+    #name {
+        font-size: 2.3em; 
+        left: 50%;
+        top: 15%; 
+        transform: translate(-50%, 16%); 
+        white-space: nowrap;
+    }
 }
